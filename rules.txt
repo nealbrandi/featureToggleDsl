@@ -1,0 +1,7 @@
+CLUSTER sigl AND FIRM 9001 - DEPARTMENT sale
+CLUSTER [sigl, sigs] ^ STAGE 0
+(CLUSTER sigl OR CLUSTER sigs) AND STAGE 0
+TAG [dev, alpha, beta] AND CLUSTER [sigl, sigs] AND ((FIRM 9001 ^ DEPARTMENT prog) OR UUID [123, 456])
+ACTIVATE ALL
+CLUSTER trading AND TAG NOT [beta, prod] AND FIRM 9001 ^ DEPARTMENT prog
+(CLUSTER [sigl, sigs] ^ STAGE 0) ^ TAG BPKG
