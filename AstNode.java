@@ -61,6 +61,6 @@ public class AstNode
 
     public void setRight(AstNode right)
     {
-        this.left = right; 
+        this.right = right; 
     }
 }
